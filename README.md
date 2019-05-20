@@ -1,6 +1,23 @@
 # vue-router c端页面跳转
 
 > A Vue.js project
+## Build Setup
+
+``` bash
+# install dependencies
+npm install
+
+# serve with hot reload at localhost:8080
+npm run dev
+
+# build for production with minification
+npm run build
+
+# build for production and view the bundle analyzer report
+npm run build --report
+```
+
+For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
 
 ## demo 的页面跳转逻辑图
 ![image](page.png)
@@ -67,20 +84,4 @@ onClickRight(){//本demo是点击 C断title导航菜单右边的 X
 ---
 
 > 到这基本可以实现路由因为层级多，出现的跳转混乱问题。问题解决的方法有很多种，要是有更好更简单的方法，或者有什么用的不好的地方，欢迎各路大神私信指点。
-## Build Setup
 
-``` bash
-# install dependencies
-npm install
-
-# serve with hot reload at localhost:8080
-npm run dev
-
-# build for production with minification
-npm run build
-
-# build for production and view the bundle analyzer report
-npm run build --report
-```
-
-For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
