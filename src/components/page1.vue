@@ -15,9 +15,6 @@ export default {
       this.$router.push({
         path:"page2?s="+start
       })
-    },
-    backLast(){//返回之前
-        this.$router.go(-1);
     }
   }
 }

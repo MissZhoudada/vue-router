@@ -23,7 +23,7 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin: 60px auto;
-  width: 24%;
+  width: 35%;
 }
 #app .content{
     height: 430px;
@@ -41,8 +41,9 @@ export default {
   color:red
   }
   button{
-    width: 200px;
-    height:50px;
+    width: 100%;
+    padding: 10px;
+    border:0;
     background-color: darkcyan;
     color: #ffffff;
     font-size: 20px;

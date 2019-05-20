@@ -117,32 +117,6 @@ export default new Router({
       meta:{
         title:"page8"
       }
-    },
-    {
-      path: '/page9',
-      name: 'page9',
-      props: route => ({
-        start: route.query.s,
-      }),
-      component: resolve => {
-        require(["@/components/page9.vue"], resolve);
-      },
-      meta:{
-        title:"page9"
-      }
-    },
-    {
-      path: '/page10',
-      name: 'page10',
-      props: route => ({
-        start: route.query.s,
-      }),
-      component: resolve => {
-        require(["@/components/page10.vue"], resolve);
-      },
-      meta:{
-        title:"page10"
-      }
     }
   ]
 })
