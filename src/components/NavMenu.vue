@@ -22,6 +22,7 @@ export default {
 <style scoped>
 .nav-warp{
    background-color: #cccccc;
+   font-size: 20px;
    padding: 10px;
    color: #ffffff;
 }
