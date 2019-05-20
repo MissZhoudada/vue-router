@@ -36,14 +36,14 @@ For a detailed explanation on how things work, check out the [guide](http://vuej
 
 **router文件夹下的index.js文件**
 ```js
-<!--在配置每个页面路由的时候给一个 props参数-->
+/*在配置每个页面路由的时候给一个 props参数*/
 props: route => ({
     start: route.query.s,//用来记录起始页面开始往后的层级数,需要用到跳转的都得加
 }),
 ```
 **start页面的跳转方法**
 ```js
-<!--start页面去下一页的时候需要传start参数,并且start都为1-->
+/*start页面去下一页的时候需要传start参数,并且start都为1*/
 goNext(){
   this.$router.push({
     path:"page1?s="+1
@@ -54,14 +54,14 @@ goNext(){
 
 **当前页面需要做的操作**
 ```js
-<!--接收上一个页面通过props传过来的参数start-->
+/*接收上一个页面通过props传过来的参数start*/
 props:['start'];
 
-<!--
+/*
 去下个页面的方法,会有两种情况：
 1. 页面如果是start页面,使用上面的start页面跳转方法
 2. 不是start页面,需要接收上一个页面传过来的start+1，继续去下一页
--->
+*/
 goNext(){
 let start =Number(this.start) +1; 
  this.$router.push({
