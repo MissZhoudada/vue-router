@@ -1,22 +1,17 @@
 <template>
   <div id="app">
+    <nav-menu :title="$route.meta.title" :start="$route.query.s"/>
     <router-view/>
-    <div class="roule">
-      <span>页面点击效果如上，存在以下问题：</span>
-      <ul>
-        <li>如：点击page5页面的  go page3 按钮，跳转到指定的page3页面后
-        </li>
-        <li>点击page3页面的 back last按钮，理想是跳到他的上一级，page2页面，然后逐级返回到home主页</li>
-        <li>但是，页面返回的却是page5页面 </li>
-        <li style="color:green">注意：指定的跳转页面不是写死的，是可以人为设置灵活变动的，数量大于等于1</li>
-      </ul>
-    </div>
   </div>
 </template>
 
 <script>
+import navMenu from './components/NavMenu'
 export default {
   name: 'App',
+  components:{
+    navMenu
+  }
 }
 </script>
 
@@ -27,16 +22,16 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+  margin: 60px auto;
+  width: 24%;
 }
-#app p{
-  height: 430px;
-  width: 300px;
-  line-height: 430px;
-  font-size: 3em;
-  background-color:orange;
-  margin: 10px auto;
-  color: #ffffff
+#app .content{
+    height: 430px;
+    width: 100%;
+    font-size: 3em;
+    background-color: #cccccc;
+    color: #ffffff;
+    border-top: 1px solid #ffffff;
 }
 .roule{
   position:absolute;
@@ -52,8 +47,7 @@ export default {
     color: #ffffff;
     font-size: 20px;
   }
-    button:last-child{
-   
+    button:last-child{   
     background-color: rgb(238, 38, 55);
   }
 </style>

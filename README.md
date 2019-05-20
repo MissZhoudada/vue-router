@@ -1,6 +1,9 @@
-# demo
+# vue-router c端页面跳转
 
 > A Vue.js project
+
+# demo 跳转逻辑图
+![image](page.png)
 
 ## Build Setup
 

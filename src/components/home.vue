@@ -1,7 +1,9 @@
 <template>
   <div>
-    <button @click="goNext">go page1</button>
-    <p>home</p>
+    <div class="content">
+      home
+      <button @click="goNext">next page1</button>
+    </div>
   </div>
 </template>
 <script>
@@ -9,7 +11,7 @@ export default {
   methods:{
     goNext(){//跳转方法
       this.$router.push({
-        name:"page1"
+        path:"page1?s="+1
       })
     }
   }

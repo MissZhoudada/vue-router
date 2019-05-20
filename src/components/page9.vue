@@ -1,19 +1,19 @@
 <template>
     <div>
-        <button @click="backLast">back last</button>
-        <button @click="goNext">next page10</button>
-        <div>
-            <button @click="goTargetPage">go page6（指定）</button>
+        <div class="content">
+          page9
+          <button @click="goNext">next page10</button>
         </div>
-        <p>page9</p>
     </div>
 </template>
 <script>
 export default {
+  props:['start'],
   methods:{
     goNext(){//跳转方法
+      let start = Number(this.start)+1;
       this.$router.push({
-        name:"page10"
+        path:"page10?s="+start
       })
     },
     backLast(){//返回之前
