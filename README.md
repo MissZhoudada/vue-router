@@ -1,5 +1,8 @@
 # vue-router c端页面跳转
 
+## demo预览
+[demo](https://misszhoudada.github.io/#/)
+
 > A Vue.js project
 ## Build Setup
 
